@@ -29,23 +29,30 @@ function isOdd(number){
 // return true if it is even and false if it is not.
 
 function isEven(number){
-    if(number % 2 === 1 || number % 2 === -1) {
-        return false
-        }   
-    else if(number % 2 + 1 !==0) {
+    if (number % 2 === 0) {
         return true}
+    else {
+        return false
+    }
 }
-
-
-
-
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 
+
+
+function fahrenheitToCelsius(F){
+    return ((F)-32)*5/9  
+}
+
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+
+function celsiusToFahrenheit(C){
+    return ((C)*9/5)+32
+
+}
 
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -53,6 +60,8 @@ function isEven(number){
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
+
+
 
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
