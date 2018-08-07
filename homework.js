@@ -123,6 +123,13 @@ function multigreeting(name, language){
 // Date objects.
 // If the birth date is after than the current date, return nothing.
 
-function howOld(){
-    
-}
+function howOld(birthDate, randomDate){
+    var birthMs = Date.parse(birthDate)
+    var randomDateMs = Date.parse(randomDate)
+    if (birthMs > randomDateMs){
+        return("Sorry. Invalid")
+    }
+    else {
+            return((randomDateMs - birthMs)/365/24/60/60/1000)
+        }
+    }
