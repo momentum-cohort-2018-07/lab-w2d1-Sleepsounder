@@ -98,23 +98,13 @@ function lesser(numberA, numberB){
 function multigreeting(name, language){
     if(language === "en"){
         return "Hello, " + name + "!" 
-    }
-
-    else if(language === "es"){
+    } if(language === "es"){
         return "¡Hola, " + name + "!"
-    }
-
-    else if(language === "fr"){
+    } if(language === "fr"){
         return "Bonjour, " + name + "!"
-    }
-
-    else if(language === "eo"){
+    } if(language === "eo"){
         return "Saluton, " + name + "!" 
-    }
-
-    else {
-        return
-    }
+    } 
 }
 
 // 10. Create a function, howOld, that takes a birthdate and a another
@@ -130,6 +120,6 @@ function howOld(birthDate, randomDate){
         return("Sorry. Invalid")
     }
     else {
-            return Math.floor((randomDateMs - birthMs)/365.24/24/60/60/1000)
+            return Math.floor((randomDateMs - birthMs)/365.2422/24/60/60/1000)
         }
     }
