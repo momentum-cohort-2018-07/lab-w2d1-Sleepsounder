@@ -130,6 +130,6 @@ function howOld(birthDate, randomDate){
         return("Sorry. Invalid")
     }
     else {
-            return((randomDateMs - birthMs)/365/24/60/60/1000)
+            return Math.floor((randomDateMs - birthMs)/365.24/24/60/60/1000)
         }
     }
